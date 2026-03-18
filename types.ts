@@ -3,7 +3,7 @@ export interface CosmicObject {
   slug: string
   title: string
   content?: string
-  metadata: Record<string, unknown>
+  metadata?: Record<string, unknown> // Changed: allow optional metadata to align with derived interfaces
   type?: string
   created_at?: string
   modified_at?: string
